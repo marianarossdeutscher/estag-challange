@@ -1,50 +1,35 @@
-# Base para desenvolvimento PHP + React
-## Subindo o sistema
+# Desenvolvimento de um ponto de vendas utilizando PHP e PostgreSQL
+## Starting the System
 
-Para subir o sistema, você pode executar o comando ``bash ./scripts/start.sh`` na raiz do projeto
+To start the system, you can run the command bash ./scripts/start.sh in the project root.
 
-Para derrubar o sistema, você pode executar o comando ``bash ./scripts/stop.sh`` na raiz do projeto
+To stop the system, run the command bash ./scripts/stop.sh in the project root.
 
-Seu sistema estará disponível em [localhost](http://localhost)
+Your system will be available at [localhost](http://localhost)
 
-## Informações uteis
-Logs do sistema são registrados em ``logs/error.log``
+## Useful Information
+System logs are recorded in ``logs/error.log``
 
-Caso precise testar algo dentro do sistema e queira ver algum retoro, você pode usar o error_log para testar conforme exemplo dentro do arquivo ``src/index.php``
+If you need to test something within the system and want to see any output, you can use error_log to test, as shown in the file ``src/index.php``
 
-## Base de dados
-Todo script que você desenvolver ou itens que queira deixar disponível na base, você pode deixar no arquivo sql em ``database/init.sql``
+## Database
+Any script you develop or items you want to make available in the database can be placed in the SQL file at ``database/init.sql``
 
-Para acessar o pgadmin você pode usar a url [localhost:8080](http://localhost:8080)
+To access pgAdmin, you can use the URL [localhost:8080](http://localhost:8080)
 
 email: root@root.com
+password: root
 
-senha: root
+## Setting the access
+1. Access PGADMIN
+2. Expand ``Servers``
+3. Expand ``pgsql_desafio``
+4. Enter the password ``root``
 
-## Configurando o acesso
-1. Acesse o PGADMIN
-1. Expanda ``Servers``
-1. Expanda ``pgsql_desafio``
-1. Preencha a senha ``root``
-
-## Executando comandos
-1. Acesse o PGADMIN
-1. Expanda ``Servers``
-1. Expanda ``pgsql_desafio``
-1. Clique em ``applicationphp``
-1. Clique com o botão direito em ``applicationphp``
-1. Clique na opção ``Query Tool``
-
-## Instalando dependencias no react
-
-Para instalar dependencias no react, você pode usar o script install.sh ou install_dev.sh
-
-O script install.sh irá instalar a dependencia normalmente com npm install
-
-O script install_dev irá instalar a dependencia de dev
-
-Para executar qualquer um deles, você deve executar na raiz do projeto o seguinte comando ``bash ./scripts/install.sh`` seguido da dependencia que você deseja instalar
-
-!!!!ATENÇÃO!!!!!
-
-O script suporta um parametro por vez, então, caso tenha mais de uma dependencia para instalar, execute o comando uma vez para cada dependencia
+## Running Commands
+1. Access PGADMIN.
+2. Expand ``Servers``.
+3. Expand ``pgsql_desafio``.
+4. Click on ``applicationphp``.
+5. Right-click on ``applicationphp``.
+6. Select the ``Query Tool`` option.
