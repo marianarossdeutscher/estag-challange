@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../css/product.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><a href="index.html">Suite Store</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form class="form-products" id="product-form">
+            <div class="form-input-name">
+                <label>Product name</label>
+                <input type="text" id="prod-name" name ="prodName" placeholder=" e.g. Rice"/>
+                <p class="form-input-error error-hidden"></p>
+            </div> 
+
+            <div class="form-input-amount">
+                <label>Amount</label>
+                <input type="text" id="prod-amount" name="prodAmount" placeholder=" e.g. 7"/>
+                <p class="form-input-error error-hidden"></p>
+            </div>
+
+            <div class="form-input-unitprice">
+                <label>Price ($)</label>
+                <input type="text" id="unit-price-product" name="prodPrice" placeholder=" e.g. 6.50"/>
+                <p class="form-input-error error-hidden"></p>
+            </div>
+            
+            <div class="form-select-category">
+                <label>Category</label>
+                <select id="category" name="category">
+                    <option value="" disabled selected id="category-select">Select a category</option>
+                </select>
+                <p class="form-input-error error-hidden"></p>
+            </div>
+
+            <div class="form-send">
+                <button type="submit" class="button" id="button-add">Add Product</button>
+            </div>
+        </form>
+
+        <div class="products-table">
+            <table class="table-products">
+                <thead>
+                    <th>Code</th>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Unit price</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </thead>
+                <tbody id="tbody-products"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="../scripts/product.js"></script>
+</body>
+</html>
+

@@ -1,17 +1,16 @@
 
 <?php
-error_log('Sou um log');
-echo "Olá mundo";
-
+//error_log('Sou um log');
+//echo "esse ta funcionando";
 
 $host = "pgsql_desafio";
 $db = "applicationphp";
 $user = "root";
 $pw = "root";
 
-$myPDO = new PDO("pgsql:host=$host;dbname=$db", $user, $pw);
+define("myPDO", new PDO("pgsql:host=$host;dbname=$db", $user, $pw));
 
-// exemplo de insert
+/*// exemplo de insert
 $statement = $myPDO->prepare("INSERT INTO mytable (DESCRIPTION) VALUES ('TEST PHP')");
 $statement->execute();
 
@@ -27,4 +26,4 @@ $statement2 = $myPDO->query("SELECT * FROM mytable");
 $data2 = $statement2->fetchALL();
 
 echo "<br>";
-print_r($data2);
+print_r($data2);*/

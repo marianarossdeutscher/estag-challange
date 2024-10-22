@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1><a href="index.html">Suite Store</a></h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="history.html">History</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="form-section">
+                <form class="form-index" id="index-form" action="POST">
+
+                    <div class="form-select-product">
+                        <label>Product</label>
+                        <select id="product" name="product">
+                            <option disabled selected>Select a product</option>
+                        </select>
+                        <p class="form-input-error error-hidden"></p>
+                    </div>
+
+                    <div class="form-input-amount">
+                        <label>Amount</label>
+                        <input type="text" min="1" max="100" step="1" id="amount" name="amount"placeholder=" e.g. 5">
+                        <p class="form-input-error error-hidden"></p>
+                    </div>
+
+                    <div class="form-input-unitprice">
+                        <label>Price ($)</label>
+                        <input type="text" id="unit-price" name="unit-price" placeholder="Price" readonly>
+                        <p class="form-input-error error-hidden"></p>
+                    </div>
+
+                    <div class="form-input-tax">
+                        <label>Tax</label>
+                        <input type="text" id="tax" name="tax" placeholder="Tax" readonly>
+                        <p class="form-input-error error-hidden"></p>
+                    </div>
+                    
+                    <div class="form-send">
+                        <button type="submit" class="button" id="button-add">Add Product</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="table-section">
+                <table id="table-index">
+                    <thead>
+                        <th>Product</th>
+                        <th>Unit price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </thead>
+
+                    <tbody id="tbody-index"></tbody>
+                </table>
+
+                <div class="totals">
+                    <p id="totalTax" name="totalTax" action="POST" ></p>
+                    <p id="totalValue" name="totalValue" action="POST" ></p>
+                </div>
+
+                <div class="actions">
+                    <button type="button" class="button-cancel" id="button-cancel" onclick="cancelOrder()">Cancel</button>
+                    <button type="button" class="button-finish" id="button-finish" onclick="finishOrder()">Finish</button>
+                </div>
+            </section>
+
+        </div>
+
+        <script src="../scripts/index.js"></script>
+    </body>
+
+</html>

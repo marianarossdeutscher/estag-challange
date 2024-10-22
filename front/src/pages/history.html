@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../css/history.css" />
+</head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1><a href="index.html">Suite Store</a></h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="history.html">History</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="table-history">
+                <table>
+                    <thead>
+                        <th>Code</th>
+                        <th>Tax</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody id="tbody-history">
+                        <tr class="title" data-child="more-info"></tr>
+                        <tr class="child more-info hidden"></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="../scripts/history.js"></script>
+    </body>
+</html>
