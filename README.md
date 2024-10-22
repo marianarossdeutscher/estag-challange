@@ -1,4 +1,4 @@
-# Desenvolvimento de um ponto de vendas utilizando PHP e PostgreSQL
+# Developing a Point of Sale System using PHP and PostgreSQL
 ## Starting the System
 
 To start the system, you can run the command bash ./scripts/start.sh in the project root.
